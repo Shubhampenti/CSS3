@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            padding-top: 6vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 94vh; /* 100vh minus the navbar height */
+        }
+        .navbar{
+            color: black;
+            display: flex;       
+            justify-content: space-between; 
+            align-items: center;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            width: 100vw;
+            height: 6vh;
+            z-index: -1;
+        }
+        .navbar > .links {
+            display: flex;
+        }
+        .navbar > .links > div {
+            background-color: #f1f1f1;
+            width: 150px;
+            margin: 10px;
+            line-height: 30px;
+            font-size: 30px;          
+        }
+        .logo{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        .container1 img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            padding-top: 10vh;
+        }
+        .middle-logo {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        .middle-logo h1 {
+            font-size: 60px;
+            margin: 0;
+            color: black;
+        }
+        .middle-logo p {
+            font-size: 30px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="navbar">
+        <h1 class="logo">Br Architect</h1>
+        <div class="links">
+            <div><a href="#">About</a></div>
+            <div><a href="#">Projects</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </div>
+    <div class="container1">
+        <img src="./img/architect.jpg" alt="">
+        <div class="middle-logo">
+            <h1>BR</h1>
+            <p>Architect</p>
+        </div>
+    </div>
+</body>
+</html>
